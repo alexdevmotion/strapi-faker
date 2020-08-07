@@ -14,7 +14,16 @@ module.exports = {
    * @return {Object}
    */
 
-  index: async (ctx) => {
+  up: async (ctx) => {
+    // Add your own logic here.
+
+    // Send 200 `ok`
+    ctx.send({
+      message: 'ok'
+    });
+  },
+
+  down: async (ctx) => {
     // Add your own logic here.
 
     // Send 200 `ok`
@@ -22,4 +31,5 @@ module.exports = {
       message: 'ok'
     });
   }
+
 };

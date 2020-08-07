@@ -2,8 +2,16 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/",
-      "handler": "strapi-faker.index",
+      "path": "/up",
+      "handler": "strapi-faker.up",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/down",
+      "handler": "strapi-faker.down",
       "config": {
         "policies": []
       }
