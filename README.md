@@ -1,6 +1,15 @@
 # Strapi plugin strapi-faker
 
-Seed your strapi models with faker.js
+Seed your strapi models with faker.js.
+
+This plugin is inspired by [ennaimy/faker](https://github.com/ennaimy/faker), which to me seemed broken by the changes
+introduced by [strapi](https://github.com/strapi/strapi), at the time I created this repo.
+
+It also brings a couple of improvements on top of that version:
+- more realistic fakes, covering more field types
+- un-seeding functionality
+- fake users
+- seeds all models at once (useful if you have lots of them)
 
 
 ## Getting started
