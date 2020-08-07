@@ -1,3 +1,5 @@
-# Strapi plugin strapi:faker
+# Strapi plugin strapi-faker
 
-A quick description of strapi:faker.
+Fill your strapi models with faker.js
+
+
