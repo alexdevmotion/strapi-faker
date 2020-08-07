@@ -18,17 +18,17 @@ git clone https://github.com/alexdevmotion/strapi-faker
 yarn add faker
 ```
 
-`NOTE` v4.1.0 was used at the time this plugin was written.
+`NOTE` faker v4.1.0 was used at the time this plugin was written.
 
 - Copy over the environment variables from `.env.example` to the `.env` file in the root of your strapi project 
 (change the values, if needed; see defaults below under `.env parameters`)
-
-`NOTE` It is advisable to disable those routes after you are done with seeding.
 
 - (Re)start the strapi server
 
 - Enable the `up` & `down` routes in the strapi admin:
 Roles & Permissions > Edit the Public role > Scroll down to the STRAPI-FAKER plugin > Check both items > Click Save on the top right
+
+`NOTE` It is advisable to disable those routes after you are done with seeding.
 
 
 ## Seeding
@@ -52,7 +52,7 @@ This procedure won't delete any records other than the *last* seeded records.
 
 `SEED_NUM_ITEMS`: integer (default `10`) = the number of fake entries to generate for each model
 
-`SEED_NUM_DEFAULT_ITEMS`: integer (default `3`) = the number of fake entries to use when defining relations between models
+`SEED_NUM_DEFAULT_ITEMS`: integer (default `3`) = the number of fake entries out of all fake entries to also generate fake relations for
 
 `SEED_OUTPUT_FOLDER`: string (default `.tmp`) = the folder name located in the root of the strapi project (`api-backend`) where to save the outputs
 
