@@ -64,6 +64,8 @@ module.exports = {
       case 'date':
       case 'datetime':
         return faker.date.recent();
+      case 'time':
+        return `${faker.random.number({min:10, max: 23})}:${faker.random.number({min:10, max: 23})}:00`;
       case 'array':
         return [faker.address.latitude(), faker.address.longitude()];
       case 'email':
