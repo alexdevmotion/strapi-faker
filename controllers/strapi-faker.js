@@ -1,11 +1,5 @@
 'use strict';
 
-/**
- * strapi-faker.js controller
- *
- * @description: A set of functions called "actions" of the `strapi-faker` plugin.
- */
-
 module.exports = {
 
   /**
@@ -14,22 +8,14 @@ module.exports = {
    * @return {Object}
    */
 
-  up: async (ctx) => {
-    // Add your own logic here.
-
-    // Send 200 `ok`
-    ctx.send({
-      message: 'ok'
-    });
+  async up(ctx) {
+    strapi.plugins['strapi-faker'].services['strapi-faker'].up();
+    ctx.send('Strapi-faker up triggered. Check out the server console!');
   },
 
-  down: async (ctx) => {
-    // Add your own logic here.
-
-    // Send 200 `ok`
-    ctx.send({
-      message: 'ok'
-    });
+  async down(ctx) {
+    strapi.plugins['strapi-faker'].services['strapi-faker'].down();
+    ctx.send('Strapi-faker down triggered. Check out the server console!');
   }
 
 };
